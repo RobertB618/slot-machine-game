@@ -212,7 +212,7 @@ class GameIframe {
         if (gameInfo) {
             const balanceText = gameInfo.querySelector('p:last-child');
             if (balanceText) {
-                balanceText.textContent = `Balance actual: $${this.currentBalance.toFixed(2)}`;
+                balanceText.textContent = `Current balance: $${this.currentBalance.toFixed(2)}`;
             }
         }
     }
