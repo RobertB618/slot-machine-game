@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+.game-container {
+    max-width: 100%;
+}
+
+#gameInfo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#gameInfo h2 {
+    margin: 0;
+    color: #ffd700;
+    font-size: 1.8em;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#betAmount {
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+}
+
+#betAmount option {
+    background: #16213e;
+    color: #fff;
+}
+
+#spinButton {
+    padding: 10px 30px;
+    font-size: 1.1em;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#spinButton:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+#spinButton:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#result.show {
+    opacity: 1;
+}
+
+.win {
+    background: rgba(76, 175, 80, 0.2);
+    border: 1px solid rgba(76, 175, 80, 0.4);
+}
+
+.loss {
+    background: rgba(244, 67, 54, 0.2);
+    border: 1px solid rgba(244, 67, 54, 0.4);
+}
+
+.error {
+    background: rgba(244, 67, 54, 0.2);
+    color: #ff6b6b;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}

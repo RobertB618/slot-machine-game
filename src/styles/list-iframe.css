@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+}
+
+.list-container {
+    max-width: 100%;
+}
+
+.balance-display {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#userBalance {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.slot-machine-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slot-machine-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slot-machine-item h3 {
+    margin: 0 0 10px;
+    color: #ffd700;
+}
+
+.slot-machine-item p {
+    margin: 5px 0;
+    color: #e6e6e6;
+}
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "slot-machine-game",
+  "version": "1.0.0",
+  "description": "Slot Machine Game with iframes",
+  "scripts": {
+    "clean": "rimraf dist",
+    "make-dirs": "mkdirp dist/styles dist/utils dist/models dist/services dist/interfaces",
+    "copy-files": "copyfiles -u 1 \"src/**/*.html\" \"src/**/*.css\" dist/",
+    "build": "npm run clean && npm run make-dirs && npm run copy-files && tsc",
+    "start": "http-server ./dist -p 8080"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "copyfiles": "^2.4.1",
+    "http-server": "^14.1.1",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^5.0.10"
+  }
+}
