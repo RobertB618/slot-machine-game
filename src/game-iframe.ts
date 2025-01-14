@@ -27,7 +27,7 @@ class GameIframe {
         // Disable spin button if bet exceeds balance, show error message
         if (selectedBet > this.currentBalance) {
             spinButton.disabled = true;
-            this.showError('¡Fondos insuficientes para esta apuesta!');
+            this.showError('¡Not enough money!');
             this.updateAvailableBets();
         } else {
             spinButton.disabled = false;
@@ -127,7 +127,7 @@ class GameIframe {
             gameInfo.innerHTML = `
                 <h2>${data.name}</h2>
                 <p>ID: ${data.id}</p>
-                <p>Balance actual: $${this.currentBalance.toFixed(2)}</p>
+                <p>Current Balance: $${this.currentBalance.toFixed(2)}</p>
             `;
 
             const availableBets = data.betAmounts.filter((bet: number) => bet <= this.currentBalance);
@@ -234,7 +234,7 @@ class GameIframe {
 
         const isWin = result > 0;
         const className = isWin ? 'win' : 'loss';
-        const message = isWin ? '¡GANASTE!' : 'Perdiste';
+        const message = isWin ? 'WIN!' : 'LOSE!';
         const amount = Math.abs(result).toFixed(2);
 
         resultElement.className = className;
